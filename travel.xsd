@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="destination">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="place">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="state" type="xs:string"/>
+                            <xs:element name="region">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Udaipur"/>
+                                        <xs:enumeration value="Jaisalmer"/>
+                                        <xs:enumeration value="Jaipur"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="attraction">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="rating">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:float">
+                                        <xs:minInclusive value="0.0"/>
+                                        <xs:maxInclusive value="5.0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ticket" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="food-type">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="meal-type" type="xs:string"/>
+                            <xs:element name="avg-cost" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="food">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" type="xs:string"/>
+                            <xs:element name="drink" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="transport">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="transport1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="type" type="xs:string"/>
+                                        <xs:element name="cost" type="xs:float"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="transport2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="type" type="xs:string"/>
+                                        <xs:element name="cost" type="xs:float"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="hotel">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hotel-name" type="xs:string"/>
+                            <xs:element name="locality" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="hotel-info">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="room-type" type="xs:string"/>
+                            <xs:element name="rooms" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="coupon">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="coupon-code" type="xs:integer"/>
+                            <xs:element name="discount-percent" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

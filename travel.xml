@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="travel.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="travel.xsl" type="text/xsl"?>
+<destination>
+    <place>
+        <state>Rajasthan</state>
+        <region>Jaipur</region>
+    </place>
+
+    <attraction>
+        <name>Hawa mahal</name>
+        <rating>4.5</rating>
+        <ticket>100</ticket>
+    </attraction>
+
+    <food-type>
+        <meal-type>Non vegetarian</meal-type>
+        <avg-cost>100</avg-cost>
+    </food-type>
+    <food>
+        <item>Laal maans curry</item>
+        <drink>Badam milk</drink>
+    </food>
+
+    <transport>
+        <transport1>
+            <type>Cycle rickshaw</type>
+            <cost>30</cost>
+        </transport1>
+        <transport2>
+            <type>Cab</type>
+            <cost>200</cost>
+        </transport2>
+    </transport>
+
+    <hotel>
+        <hotel-name>Cloud8</hotel-name>
+        <locality>Bapu bazaar</locality>
+    </hotel>
+
+    <hotel-info>
+        <room-type>Luxury suite</room-type>
+        <rooms>8</rooms>
+    </hotel-info>
+
+    <coupon>
+        <coupon-code>2345</coupon-code>
+        <discount-percent>25</discount-percent>
+    </coupon>
+</destination>
