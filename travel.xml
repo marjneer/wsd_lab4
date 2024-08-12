@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="travel.dtd" type="application/xml-dtd"?>
 <?xml-model href="travel.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <?xml-stylesheet href="travel.xsl" type="text/xsl"?>
 <destination>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!ELEMENT destination (place, attraction, food-type, food, transport, hotel, hotel-info, coupon)>
+    
+    <!ELEMENT place (state, region)>
+    <!ELEMENT state (#PCDATA)>
+    <!ELEMENT region (#PCDATA)>
+    
+    <!ELEMENT attraction (name, rating, ticket)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT rating (#PCDATA)>
+    <!ELEMENT ticket (#PCDATA)>
+    
+    <!ELEMENT food-type (meal-type, avg-cost)>
+    <!ELEMENT meal-type (#PCDATA)>
+    <!ELEMENT avg-cost (#PCDATA)>
+    
+    <!ELEMENT food (item, drink)>
+    <!ELEMENT item (#PCDATA)>
+    <!ELEMENT drink (#PCDATA)>
+    
+    <!ELEMENT transport (transport1, transport2)>
+    <!ELEMENT transport1 (type, cost)>
+    <!ELEMENT transport2 (type, cost)>
+    <!ELEMENT type (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    
+    <!ELEMENT hotel (hotel-name, locality)>
+    <!ELEMENT hotel-name (#PCDATA)>
+    <!ELEMENT locality (#PCDATA)>
+    
+    <!ELEMENT hotel-info (room-type, rooms)>
+    <!ELEMENT room-type (#PCDATA)>
+    <!ELEMENT rooms (#PCDATA)>
+    
+    <!ELEMENT coupon (coupon-code, discount-percent)>
+    <!ELEMENT coupon-code (#PCDATA)>
+    <!ELEMENT discount-percent (#PCDATA)>
